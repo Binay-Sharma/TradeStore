@@ -42,7 +42,7 @@ public class TradestorageApplicationTests {
 			LocalDate localDate = getLocalDate(2015, 05, 21);
 			ResponseEntity responseEntity = tradeController.tradeValidateStore(createTrade("T2", 1, localDate));
 		}catch (InvalidTradeException ie) {
-			Assertions.assertEquals("Invalid Trade: T2  Trade Id is not found", ie.getMessage());
+			Assertions.assertEquals("Invalid Trade:T2Trade Id is not found", ie.getMessage());
 		}
 	}
 
